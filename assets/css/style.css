@@ -1,0 +1,41 @@
+:root {
+    background-color: #111418;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.basicImg {
+    display: block;
+    height: 80px;
+}
+
+.container-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    color: #4e9af1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    background-color: #1c1f26;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
