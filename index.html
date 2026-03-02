@@ -1,46 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Website Layout</title>
+    <meta name="description"
+        content="Skapersøk er et enkelt og åpent system for inventar og søk, laget for skapere, skoler og verksteder." />
+    <meta name="theme-color" content="#0f1216" />
+    <title>Skapersøk</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container-row">
-            <img src="assets/logo.png" alt="" class="basicImg">
-            <h1>Skapersok</h1>
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/logo.png" alt="Skapersøk-logo" class="basicImg">
+                <div>
+                    <h1>Skapersøk</h1>
+                    <p class="tagline">Enkelt inventar + søk for skapere</p>
+                </div>
+            </div>
+            <a class="cta-link" href="https://github.com/Skapersok">Se på GitHub</a>
         </div>
     </header>
 
     <main class="container">
-        <section id="home" class="card">
-            <h2>Welcome</h2>
-            <p>Skapersøk is an inventory management and search system built for any maker, store, school, or workshop.
-                Its design is focused on ease of use, while still being extensible and powerful.
+        <section class="intro card reveal">
+            <p class="eyebrow">ÅPEN KILDEKODE</p>
+            <h2>Bygget for verksteder, skoler og kreative miljøer.</h2>
+            <p>Skapersøk er et system for inventarhåndtering og søk, laget for skapere, butikker, skoler og verksteder.
+                Appen er utviklet med fokus på enkel bruk, samtidig som systemet er fleksibelt og kraftig.
             </p>
         </section>
-        <section id="home" class="card">
-            <h2>The system</h2>
-            <p>More information about the system will be added soon.</p>
+
+        <section class="card-grid">
+            <section class="card reveal">
+                <h3>Kostnad</h3>
+                <p>Skapersøk er helt gratis å bruke 🎉, både for private og offentlige brukere. <br><br><b>Vi tilbyr
+                        også
+                        profesjonell
+                        betalt hjelp med oppsettning og tilpasning av systemet for organisasjoner.</b> <br><br> Kontakt:
+                    <a href="mailto:trym@bringsrud.com">trym@bringsrud.com</a>
+                </p>
+            </section>
+
+            <section class="card reveal">
+                <h3>Åpen kildekode</h3>
+                <p>Skapersøk er åpen kildekode. Utforsk <a href="https://github.com/Skapersok">GitHub-repositoriene
+                        våre</a>!</p>
+            </section>
         </section>
-        <section id="home" class="card">
-            <h2>Open source</h2>
-            <p>Skapersøk is an open source project, check <a href="https://github.com/Skapersok">our GitHub
-                    repositories</a>!
+
+        <section class="system-section card reveal" aria-labelledby="system-heading">
+            <p class="eyebrow">SYSTEMGUIDE</p>
+            <h3 id="system-heading" class="section-title">Slik fungerer Skapersøk</h3>
+            <article class="system-step">
+                <p class="step-index">01</p>
+                <div class="system-step-content">
+                    <div>
+                        <h4>Treet</h4>
+                        <p>I Skapersøk er alt organisert i et hierarkisk tre av "Crates". Hver boks i treet
+                            representerer en
+                            crate.</p>
+                    </div>
+                    <figure class="system-media" aria-label="Illustrasjon av trestruktur">
+                        <img src="assets/imgs/tree_structure.png" alt="Trestruktur i Skapersøk" loading="lazy">
+                        <span>Bilde av trestruktur</span>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="system-step">
+                <p class="step-index">02</p>
+                <div class="system-step-content">
+                    <div>
+                        <h4>Alt er en "crate"</h4>
+                        <p>Alt i Skapersøk er en "Crate". En crate kan være noe fysisk, som en hylle, etasje, rom eller
+                            en
+                            boks med knapper. Men det må ikke være fysisk; du kan for eksempel organisere klær etter
+                            type.</p>
+                    </div>
+                    <figure class="system-media" aria-label="Illustrasjon som forklarer crates">
+                        <img src="assets/imgs/sokker.png" alt="Eksempel på hva en crate kan være" loading="lazy">
+                        <span>Bilde som forklarer crates</span>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="system-step">
+                <p class="step-index">03</p>
+                <div class="system-step-content">
+                    <div>
+                        <h4>Plasseringskoder</h4>
+                        <p>Hver crate har en egen plasseringskode som består av koden til craten og alle overordnede
+                            crates.
+                            For eksempel vil plasseringskoden bindersen på bilde være <strong>A-B-BIN</strong>. Kodene
+                            gjør
+                            det
+                            lett å forstå hvor noe er, bare ved å lese koden.</p>
+                    </div>
+                    <figure class="system-media" aria-label="Illustrasjon av plasseringskode">
+                        <img src="assets/imgs/tree_structure.png" alt="Eksempel på plasseringskode" loading="lazy">
+                        <span>Bilde av plasseringskode</span>
+                    </figure>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 by <a href="https://github.com/2meanders">2menders</a> and <a
+            <p>&copy; <span id="year">2026</span> av <a href="https://github.com/2meanders">2menders</a> og <a
                     href="https://github.com/trymbf">trymbf</a></p>
         </div>
     </footer>
