@@ -23,26 +23,3 @@ if (prefersReducedMotion) {
 
     revealElements.forEach((node) => observer.observe(node));
 }
-
-const systemMediaItems = document.querySelectorAll(".system-media");
-
-systemMediaItems.forEach((media) => {
-    const img = media.querySelector("img");
-
-    if (!img) {
-        return;
-    }
-
-    if (img.complete && img.naturalWidth > 0) {
-        media.classList.add("has-image");
-        return;
-    }
-
-    img.addEventListener("load", () => {
-        media.classList.add("has-image");
-    });
-
-    img.addEventListener("error", () => {
-        media.classList.remove("has-image");
-    });
-});

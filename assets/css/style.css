@@ -192,19 +192,11 @@ h4 {
 }
 
 .system-media img {
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 6px;
-}
-
-.system-media.has-image {
-    padding: 6px;
-}
-
-.system-media.has-image img {
-    display: block;
 }
 
 .system-media.has-image span {
