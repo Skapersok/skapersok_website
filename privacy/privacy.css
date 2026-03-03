@@ -1,0 +1,42 @@
+.brand-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.privacy-main {
+    padding-top: 42px;
+}
+
+.policy-content {
+    color: var(--text-soft);
+    max-width: 76ch;
+}
+
+.policy-content h1,
+.policy-content h2,
+.policy-content h3,
+.policy-content h4 {
+    color: var(--text);
+    margin-top: 1.5em;
+    margin-bottom: 0.45em;
+}
+
+.policy-content h1 {
+    margin-top: 0;
+    font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+}
+
+.policy-content p,
+.policy-content ul,
+.policy-content ol {
+    margin: 0 0 0.95rem;
+}
+
+.policy-content ul,
+.policy-content ol {
+    padding-left: 1.2rem;
+}
+
+.policy-content strong {
+    color: var(--text);
+}
