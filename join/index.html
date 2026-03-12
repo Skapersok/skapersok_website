@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Opening Skapersøk</title>
+</head>
+
+<body>
+
+    <p>Opening Skapersøk...</p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const ip = params.get("ip");
+        const port = params.get("port") || "80";
+        const scheme = params.get("scheme") || "http";
+
+        if (ip) {
+            const url = `skapersok://join?ip=${ip}&port=${port}&scheme=${scheme}`;
+            window.location.href = url;
+
+            // fallback after 2 seconds
+            setTimeout(() => {
+                window.location.href = "https://play.google.com/store/apps/details?id=no.skapersok.app";
+            }, 2000);
+        }
+    </script>
+
+    <p>If nothing happens:</p>
+
+    <a href="https://play.google.com/store/apps/details?id=no.skapersok.app">
+        Download Skapersøk
+    </a>
+
+</body>
+
+</html>
