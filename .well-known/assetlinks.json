@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "no.skapersok.app",
+      "sha256_cert_fingerprints": [
+        "73:65:31:E4:AB:03:C3:85:A1:16:85:C4:B2:B9:2C:BF:34:CB:08:35:FA:5D:73:16:5E:B0:6E:2C:D8:5E:97:05",
+        "B9:C7:70:11:85:49:F9:B9:11:2D:B6:70:CA:35:6B:17:9E:BD:9C:C1:9A:EB:68:1A:84:CD:45:CB:98:44:55:7D"
+      ]
+    }
+  }
+]
